@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Medicio - Blood Pressure Monitoring</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <span class="left">🕒 Monday - Saturday, 8AM to 10PM</span>
+      <span class="right">📞 Call us now +1 5589 55488 55</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+      <img src="{{ url_for('static', filename='images/images-removebg-preview.png') }}" alt="Logo" />
+      <span class="logo-text">MEDICIO</span>
+    </div>
+      <nav class="nav">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('details') }}">About</a>
+        <a href="#">Contact</a>
+        <a class="btn" href="{{ url_for('result') }}">Check your Blood Pressure</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1>Welcome to Medicio</h1>
+      <p>Welcome to our platform dedicated to monitoring blood pressure stages. Discover your current status and take proactive steps towards better health management.</p>
+      <a href="#" class="btn read-more">Read More</a>
+    </div>
+  </section>
+
+</body>
+</html>

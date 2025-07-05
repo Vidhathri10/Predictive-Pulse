@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Pressure Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css') }}">
+</head>
+<body>
+
+    <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <span class="left">🕒 Monday - Saturday, 8AM to 10PM</span>
+      <span class="right">📞 Call us now +1 5589 55488 55</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+      <img src="{{ url_for('static', filename='images/images-removebg-preview.png') }}" alt="Logo" />
+      <span class="logo-text">MEDICIO</span>
+    </div>
+      <nav class="nav">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('details') }}">About</a>
+        <a href="#">Contact</a>
+        <a class="btn" href="{{ url_for('result') }}">Check your Blood Pressure</a>
+      </nav>
+    </div>
+  </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <span>Result Page</span>
+        <span class="breadcrumb-right">Home</span>
+    </div>
+
+    <!-- Result -->
+    <main>
+        <h2> {{ prediction_text }}</strong></h2>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>Medicio</h3>
+            <p>The Smart Bridge<br>Hyderabad, Telangana, India</p>
+            <p><strong>Phone:</strong> +1 5589 55488 55<br>
+            <strong>Email:</strong> info@example.com</p>
+            <div class="social-icons">
+                <a href="#">🐦</a>
+                <a href="#">📘</a>
+                <a href="#">▶️</a>
+                <a href="#">💼</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
